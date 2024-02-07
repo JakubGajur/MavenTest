@@ -1,8 +1,12 @@
 package org.example;
 
+import com.google.common.collect.testing.features.TesterAnnotation;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+
+import static junit.framework.Assert.assertTrue;
+
 
 /**
  * Unit test for simple App.
@@ -35,4 +39,10 @@ public class AppTest
     {
         assertTrue( true );
     }
+    public void testFizz (){
+        int i=90;
+        int x=i%5;
+        assertTrue(x<=5);
+    }
 }
+
