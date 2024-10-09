@@ -27,7 +27,6 @@ public class Klient {
     public String getImie() {
         return name;
     }
-
     public String getNazwisko() {
         return surname;
     }
