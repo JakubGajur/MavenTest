@@ -1,29 +1,28 @@
 package pl.gajur;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Invocation {
     public static void main(String[] args) {
-        ArrayList<Client> Clients = new ArrayList<>();
-        HashMap<Integer, Client> ClientMap = new HashMap<>();
+        ArrayList<Client> clients = new ArrayList<>();
+        HashMap<Integer, Client> clientMap = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
 
-        Client Client1 = new Client(1, "Jan", "Kowalski", 24, "jankowalski@gmail.com");
-        Client Client2 = new Client(2, "Marcin", "Nowak", 36, "marcin@gmail.com");
-        Client Client3 = new Client(3, "Maria", "Pietrzak", 44, "mpietrzak@gmail.com");
+        Client client1 = new Client(1, "Jan", "Kowalski", 24, "jankowalski@gmail.com");
+        Client client2 = new Client(2, "Marcin", "Nowak", 36, "marcin@gmail.com");
+        Client client3 = new Client(3, "Maria", "Pietrzak", 44, "mpietrzak@gmail.com");
 
-        Clients.add(Client1);
-        Clients.add(Client2);
-        Clients.add(Client3);
+        clients.add(client1);
+        clients.add(client2);
+        clients.add(client3);
 
-        ClientMap.put(Client1.getClientId(), Client1);
-        ClientMap.put(Client2.getClientId(), Client2);
-        ClientMap.put(Client3.getClientId(), Client3);
+        clientMap.put(client1.getClientId(), client1);
+        clientMap.put(client2.getClientId(), client2);
+        clientMap.put(client3.getClientId(), client3);
 
-       for(Client Client : Clients){
-           Client.Display();
+       for(Client client : clients){
+           client.display();
            System.out.println();
        }
         while (true) {
@@ -34,10 +33,10 @@ public class Invocation {
             }
             int clientIdToFind = Integer.parseInt(input);
 
-            Client foundClient = ClientMap.get(clientIdToFind);
+            Client foundClient = clientMap.get(clientIdToFind);
             if (foundClient != null) {
                 System.out.println("Found client:");
-                foundClient.Display();
+                foundClient.display();
                 System.out.println();
             } else {
                 System.out.println("Client with ID " + clientIdToFind + " was not found.");

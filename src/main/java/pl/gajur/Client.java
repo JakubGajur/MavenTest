@@ -17,7 +17,7 @@ public class Client {
         this.mail = email;
     }
 
-    public void Display() {
+    public void display() {
         System.out.println("Client ID: " + clientId);
         System.out.println("Name:" + name);
         System.out.println("Surname:" + surname);
@@ -26,10 +26,10 @@ public class Client {
     }
     public int getClientId() {
         return clientId;}
-    public String getImie() {
+    public String getName() {
         return name;
     }
-    public String getNazwisko() {
+    public String getSurname() {
         return surname;
     }
 
