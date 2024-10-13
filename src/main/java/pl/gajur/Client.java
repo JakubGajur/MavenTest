@@ -1,21 +1,23 @@
-package org.example;
+package pl.gajur;
 
-public class Klient {
+public class Client {
     private int clientId;
     private String name;
     private String surname;
+
     private int age;
     private String mail;
 
-    public Klient(int clientId, String imie, String nazwisko, int wiek, String mail) {
+
+    public Client(int clientId, String name, String surname, int age, String email) {
         this.clientId = clientId;
-        this.name = imie;
-        this.surname = nazwisko;
-        this.age = wiek;
-        this.mail = mail;
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.mail = email;
     }
 
-    public void wyswietlenie() {
+    public void Display() {
         System.out.println("Client ID: " + clientId);
         System.out.println("Name:" + name);
         System.out.println("Surname:" + surname);

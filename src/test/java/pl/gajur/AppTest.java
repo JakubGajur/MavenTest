@@ -1,6 +1,5 @@
-package org.example;
+package pl.gajur;
 
-import com.google.common.collect.testing.features.TesterAnnotation;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
